@@ -8,6 +8,8 @@ TagManager:
   - CheckPoint
   - Quest
   - Collectable
+  - Coin
+  - Well
   layers:
   - Default
   - TransparentFX

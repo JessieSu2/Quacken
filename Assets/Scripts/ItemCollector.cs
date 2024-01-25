@@ -36,8 +36,11 @@ public class ItemCollector : MonoBehaviour
                 text.text = itemType + "s: " + itemCount + "/" + maxCount;
             }
         }
-
-    }
+        if (collision.gameObject.CompareTag("Well"))
+        {
+            itemType = collision.gameObject.GetComponent<CollectableScript>().itemType;
+        }
+ }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -63,6 +66,17 @@ public class ItemCollector : MonoBehaviour
                 Destroy(itemCollision.gameObject);
                 itemCount++;
                 text.text = itemType + "s: " + itemCount + "/" + maxCount;
+            }
+        }
+        if (itemType == "Water" && itemCount != 1)
+        {
+            print("WELL WELL WELL");
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                print("pressing e");
+                collectionSoundEffect.Play();
+                itemCount++;
+                text.text = itemType + ": " + itemCount + "/" + maxCount;
             }
         }
     }

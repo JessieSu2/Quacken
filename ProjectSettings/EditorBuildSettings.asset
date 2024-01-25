@@ -6,9 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Start Scene.unity
+    guid: a925138b0a8bd064ca7b05e19747678e
+  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: 1bff8c175e4d87a48b76d112c93e7a47
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: cc5246d4df850d946ab3984db208f4a4
+  - enabled: 1
+    path: Assets/Scenes/Blurb Scene.unity
+    guid: bf5e729d27fc82d44ba0d995392a89a3
+  - enabled: 1
+    path: Assets/Scenes/End Scene.unity
+    guid: 4d7be05992f67714ba6e4dd78bef9c58
   m_configObjects: {}
