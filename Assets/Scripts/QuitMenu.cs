@@ -7,14 +7,6 @@ public class QuitMenu : MonoBehaviour
 {
     public void QuitGame()
     {
-        print ("Game Quit");
-        if (EditorApplication.isPlaying)
-        {
-            EditorApplication.isPlaying = false;
-        }
-        else 
-        { 
-            Application.Quit();
-        }
+         Application.Quit();
     }
 }
